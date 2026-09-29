@@ -1,22 +1,22 @@
-# thanvirdiouf.github.io
+# Thanvir Diouf — personal website
 
-My personal blog, hosted on GitHub Pages.
+A fresh, responsive static portfolio for GitHub Pages. Built with HTML, CSS, and a small amount of vanilla JavaScript. No build step or package dependencies.
 
-## Structure
+## Preview
 
-- `index.html` — homepage, lists all posts
-- `about.html` — about page
-- `posts/` — individual blog posts (one `.html` file each)
-- `assets/css/style.css` — shared styling
-- `assets/js/` — optional JS
-- `assets/images/` — images used in posts
+Run `python3 -m http.server 8000` in this directory, then visit http://localhost:8000.
 
-## Adding a new post
+## Publish
 
-1. Copy `posts/2026-08-26-first-post.html` to a new file, e.g. `posts/2026-09-10-my-new-post.html`.
-2. Edit the title, date, and content inside it.
-3. Add a link to it in `index.html` under the `<ul class="post-list">` section.
-4. Commit and push — GitHub Pages will publish it automatically at
-   `https://thanvirdiouf.github.io/posts/2026-09-10-my-new-post.html`.
+Push the commit to `main`. The existing `.github/workflows/static.yml` workflow publishes the repository to GitHub Pages. In repository settings, Pages must use **GitHub Actions** as its source.
 
-No build step required — it's plain HTML/CSS.
+## Edit
+
+- `index.html`: biography, project descriptions, and links.
+- `assets/css/style.css`: layout, colors, responsive styles, and themes.
+- `assets/js/site.js`: project filters and saved theme preference.
+- `assets/favicon.svg`: site icon.
+
+Project descriptions are based on the public GitHub profile and repository descriptions at https://github.com/thanvirdiouf, checked on 2026-09-29. No employment history, location, or credentials have been assumed. Google Fonts provides DM Sans and IBM Plex Mono; system font fallbacks keep the site usable offline. No analytics or tracking scripts are included.
+
+All project links and content work without JavaScript. Theme and filter controls appear only when JavaScript initializes. The former `/about.html` address redirects to the new About section; unknown pages use `404.html`.
