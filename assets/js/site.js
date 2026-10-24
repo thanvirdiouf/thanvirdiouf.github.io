@@ -21,6 +21,7 @@
   });
   const filters = document.querySelector('.filters');
   const projects = [...document.querySelectorAll('.project')];
+  document.querySelector('[data-project-count]').textContent = String(projects.length).padStart(2, '0');
   filters.hidden = false;
   filters.addEventListener('click', event => {
     const button = event.target.closest('button[data-filter]');
