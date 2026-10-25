@@ -21,7 +21,9 @@
   });
   const filters = document.querySelector('.filters');
   const projects = [...document.querySelectorAll('.project')];
+  const filterStatus = document.querySelector('#filter-status');
   document.querySelector('[data-project-count]').textContent = String(projects.length).padStart(2, '0');
+  filterStatus.textContent = `${projects.length} projects shown.`;
   filters.hidden = false;
   filters.addEventListener('click', event => {
     const button = event.target.closest('button[data-filter]');
@@ -29,7 +31,7 @@
     const category = button.dataset.filter;
     filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     projects.forEach(project => { project.hidden = category !== 'all' && project.dataset.category !== category; });
-    document.querySelector('#filter-status').textContent = `${projects.filter(project => !project.hidden).length} projects shown.`;
+    filterStatus.textContent = `${projects.filter(project => !project.hidden).length} projects shown.`;
   });
   document.querySelector('#year').textContent = new Date().getFullYear();
 })();

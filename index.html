@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#e9e3d2">
   <meta name="description" content="Thanvir Diouf's projects across GitHub and GitLab: Linux kernels, custom desktops, Android apps, developer tools, and materials simulation.">
   <meta property="og:title" content="Thanvir Diouf — Systems, software & curiosity">
@@ -11,6 +11,9 @@
   <meta property="og:url" content="https://thanvirdiouf.github.io/">
   <title>Thanvir Diouf — Systems, software & curiosity</title>
   <link rel="icon" href="assets/images/wings-of-freedom.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/survey-corps.css">
   <script src="assets/js/site.js" defer></script>
@@ -30,7 +33,7 @@
       <h1 id="hero-title">Thanvir<br>Diouf<span class="period">.</span></h1>
       <div class="hero-bottom">
         <div><p class="hero-description">Somewhere between<br><em>the kernel</em> and <em>the interface.</em></p><p class="hero-note">Linux on my hardware. Apps for everyday life.<br>And a little curiosity about how materials behave.</p></div>
-        <a class="round-link" href="#work"><span>Explore<br>my work</span><span class="arrow" aria-hidden="true">↘</span></a>
+        <a class="round-link" href="#work"><span>Explore my work</span><span class="arrow" aria-hidden="true">↘</span></a>
       </div>
       <div class="hero-graphic" aria-hidden="true"><img src="assets/images/wings-of-freedom.png" width="521" height="707" alt=""><span class="graphic-caption">WINGS OF FREEDOM</span></div>
       <div class="hero-foot"><span>LINUX / ANDROID / SIMULATION</span><span>BEYOND THE WALLS ↓</span></div>
@@ -38,9 +41,9 @@
     <section class="expedition" aria-labelledby="expedition-title">
       <div class="expedition-heading"><h2 id="expedition-title">The spirit of <em>exploration.</em></h2><span>SURVEY CORPS / VISUAL FIELD NOTES</span></div>
       <div class="expedition-frames">
-        <figure><img src="assets/images/expedition-map.jpg" width="560" height="315" loading="lazy" alt="The Survey Corps' expedition formation drawn on a parchment map."><figcaption><span>01 / PLAN</span>Chart the unknown.</figcaption></figure>
-        <figure><img src="assets/images/scouts-riding.jpg" width="560" height="315" loading="lazy" alt="Survey Corps scouts on horseback, silhouetted against the sky."><figcaption><span>02 / EXPLORE</span>Go a little further.</figcaption></figure>
-        <figure><img src="assets/images/levi-forest.jpg" width="560" height="315" loading="lazy" alt="Levi wearing the Survey Corps' green cloak in the forest."><figcaption><span>03 / PERSIST</span>Keep moving forward.</figcaption></figure>
+        <figure><img src="assets/images/expedition-map.jpg" width="560" height="315" loading="lazy" decoding="async" alt="The Survey Corps' expedition formation drawn on a parchment map."><figcaption><span>01 / PLAN</span>Chart the unknown.</figcaption></figure>
+        <figure><img src="assets/images/scouts-riding.jpg" width="560" height="315" loading="lazy" decoding="async" alt="Survey Corps scouts on horseback, silhouetted against the sky."><figcaption><span>02 / EXPLORE</span>Go a little further.</figcaption></figure>
+        <figure><img src="assets/images/levi-forest.jpg" width="560" height="315" loading="lazy" decoding="async" alt="Levi wearing the Survey Corps' green cloak in the forest."><figcaption><span>03 / PERSIST</span>Keep moving forward.</figcaption></figure>
       </div>
       <p class="art-credit">Stills from <a href="https://shingeki.tv/season1/">Attack on Titan</a> · A personal tribute to the Survey Corps.</p>
     </section>
@@ -51,7 +54,7 @@
     <section id="work" class="work" aria-labelledby="work-title">
       <div class="section-heading"><div><div class="section-label">02 / SELECTED WORK</div><h2 id="work-title">Things I've been<br><em>working on.</em></h2></div><p>Public projects from GitHub & GitLab.<br>Small utilities, deeper experiments.</p></div>
       <div class="filters" role="group" aria-label="Filter projects" hidden><button type="button" data-filter="all" aria-pressed="true">All projects <span data-project-count>15</span></button><button type="button" data-filter="systems" aria-pressed="false">Systems</button><button type="button" data-filter="apps" aria-pressed="false">Apps</button><button type="button" data-filter="desktop" aria-pressed="false">Desktop</button><button type="button" data-filter="tools" aria-pressed="false">Tools</button><button type="button" data-filter="research" aria-pressed="false">Research</button></div>
-      <p id="filter-status" class="sr-only" aria-live="polite"></p>
+      <p id="filter-status" class="filter-status" aria-live="polite" aria-atomic="true"></p>
       <div class="projects">
         <a class="project" data-category="desktop" href="https://github.com/thanvirdiouf/Cybar"><div class="project-top"><span>01 / DESKTOP</span><span class="project-host">GITHUB <span class="project-arrow" aria-hidden="true">↗</span></span></div><div class="project-symbol" aria-hidden="true">▂ ▅ ▃</div><h3>Cybar</h3><p>A status bar for Linux X11 desktops, written in Rust and configured in Lua. Workspaces, system readings, tray icons, and a layout of your own.</p><div class="project-tags"><span>Rust</span><span>Lua</span><span>X11</span></div></a>
         <a class="project" data-category="apps" href="https://github.com/thanvirdiouf/Nightjar"><div class="project-top"><span>02 / APPS</span><span class="project-host">GITHUB <span class="project-arrow" aria-hidden="true">↗</span></span></div><div class="project-symbol" aria-hidden="true">☾</div><h3>Nightjar</h3><p>An offline Android sleep journal and smart alarm, with ambient sounds, notes, and nightly trends. Motion and sound provide estimates of restlessness.</p><div class="project-tags"><span>Kotlin</span><span>Android</span><span>Offline</span></div></a>
@@ -87,7 +90,7 @@
       <p class="source-note">Selected from public repositories · Content checked <time datetime="2026-10-24">24 October 2026</time>. Experiments evolve; the repositories carry the latest status.</p>
     </section>
     <section class="interests section-grid" aria-labelledby="interests-title"><div class="section-label">03 / THE COMMON THREAD</div><div><h2 id="interests-title">Make it work.<br><em>Make it my own.</em></h2><div class="interest-list"><div><span>01</span><h3>Under the hood</h3><p>Linux kernels, device trees & postmarketOS porting</p></div><div><span>02</span><h3>A repeatable setup</h3><p>Nix flakes, NixOS & Home Manager</p></div><div><span>03</span><h3>A desktop that feels like home</h3><p>i3, Hyprland, dwm, status bars & GTK / Qt themes</p></div><div><span>04</span><h3>Useful little companions</h3><p>Android apps in Kotlin & Dart; Linux tools in C & Rust</p></div><div><span>05</span><h3>Models to think with</h3><p>Cellular automata, materials simulation & neural networks</p></div></div></div></section>
-    <section id="connect" class="connect" aria-labelledby="connect-title"><div class="section-label">04 / ELSEWHERE</div><h2 id="connect-title">Follow the<br><em>next expedition.</em></h2><div class="connect-profiles"><a href="https://github.com/thanvirdiouf" class="connect-link"><span><small>GITHUB</small>github.com/thanvirdiouf</span><span aria-hidden="true">↗</span></a><a href="https://gitlab.com/thanvirdiouf" class="connect-link"><span><small>GITLAB</small>gitlab.com/thanvirdiouf</span><span aria-hidden="true">↗</span></a></div><p>Source code, build notes, configurations, and works in progress.<br>Pick a repository to follow along or open an issue.</p><img class="connect-emblem" src="assets/images/wings-of-freedom.png" width="521" height="707" loading="lazy" alt=""></section>
+    <section id="connect" class="connect" aria-labelledby="connect-title"><div class="section-label">04 / ELSEWHERE</div><h2 id="connect-title">Follow the<br><em>next expedition.</em></h2><div class="connect-profiles"><a href="https://github.com/thanvirdiouf" class="connect-link"><span><small>GITHUB</small>github.com/thanvirdiouf</span><span aria-hidden="true">↗</span></a><a href="https://gitlab.com/thanvirdiouf" class="connect-link"><span><small>GITLAB</small>gitlab.com/thanvirdiouf</span><span aria-hidden="true">↗</span></a></div><p>Source code, build notes, configurations, and works in progress.<br>Pick a repository to follow along or open an issue.</p><img class="connect-emblem" src="assets/images/wings-of-freedom.png" width="521" height="707" loading="lazy" decoding="async" alt=""></section>
   </main>
   <footer><a class="wordmark" href="#" aria-label="Back to top">td<span>_</span></a><div><p>© <span id="year">2026</span> Thanvir Diouf</p><p class="theme-credit">Survey Corps tribute · <a href="https://shingeki.tv/season1/">Attack on Titan</a><br>© Hajime Isayama, Kodansha / Attack on Titan Production Committee</p></div><a href="#">Back to top ↑</a></footer>
 </div>
