@@ -7,7 +7,7 @@
   function setTheme(theme) {
     root.dataset.theme = theme;
     toggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`);
-    document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#1d221e' : '#f4f1ea';
+    document.querySelector('meta[name="theme-color"]').content = getComputedStyle(root).getPropertyValue('--bg').trim();
   }
   setTheme(['light', 'dark'].includes(savedTheme) ? savedTheme : (preference.matches ? 'dark' : 'light'));
   toggle.hidden = false;
